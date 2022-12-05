@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #540375;
+    font-family: sans-serif;
+}
+
+.container {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FB2576;
+    border-radius: 5px;
+    box-shadow: 1px 0 17px #fff;
+}
+
+@media (width < 550px) {
+    .container {
+        position: absolute;
+        transition: 2s;
+        width: 350px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #FB2576;
+        border-radius: 5px;
+        box-shadow: 1px 0 17px #fff;
+    }
+}
+
+form {
+    margin: 35px;
+}
+
+.input-field {
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+@media (width < 550px) {
+    .input-field {
+        width: 250px;
+        height: 40px;
+        margin-top: 20px;
+        padding-left: 10px;
+        /* padding-right: 10px; */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        outline: none;
+    }
+
+}
+
+.textarea {
+    height: 100px;
+    padding-top: 11px;
+}
+
+button {
+    background-color: #FFBF00;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 340px;
+}
+
+@media (width < 550px) {
+    button {
+        background-color: #FFBF00;
+        padding: 8px;
+        border-radius: 10px;
+        font-size: 16px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        margin-top: 7px;
+        margin-left: 205px;
+    }
+}
+
+
+button:hover {
+    transition: 1s;
+    box-shadow: 0 0 20px #FEFCF3;
+}
